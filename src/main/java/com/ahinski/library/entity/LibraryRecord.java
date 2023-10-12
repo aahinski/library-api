@@ -10,7 +10,7 @@ public class LibraryRecord {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @ManyToOne
+    @OneToOne
     @JoinColumn(name = "book_id", nullable = false)
     private Book book;
 

@@ -1,20 +1,11 @@
 package com.ahinski.library.dto;
 
 public class BookDTO {
-    private Long id;
     private String isbn;
     private String title;
     private String author;
     private String description;
     private String genre;
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
 
     public String getIsbn() {
         return isbn;

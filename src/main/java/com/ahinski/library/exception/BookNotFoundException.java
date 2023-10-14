@@ -18,7 +18,8 @@ public class BookNotFoundException extends Exception {
         super(cause);
     }
 
-    protected BookNotFoundException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
+    protected BookNotFoundException(String message, Throwable cause
+            , boolean enableSuppression, boolean writableStackTrace) {
         super(message, cause, enableSuppression, writableStackTrace);
     }
 

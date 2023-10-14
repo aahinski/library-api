@@ -14,7 +14,6 @@ public interface BookMapper {
 
     BookMapper INSTANCE = Mappers.getMapper(BookMapper.class);
 
-    @Mapping(source = "id", target = "id")
     @Mapping(source = "isbn", target = "isbn")
     @Mapping(source = "title", target = "title")
     @Mapping(source = "author", target = "author")

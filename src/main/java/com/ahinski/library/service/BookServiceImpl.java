@@ -56,7 +56,6 @@ public class BookServiceImpl implements BookService {
     public void deleteBookById(Long bookId) throws BookNotFoundException {
         Optional<Book> bookOptional = bookRepository.findById(bookId);
         if (bookOptional.isPresent()) {
-            Book book = bookOptional.get();
             libraryRecordRepository.deleteByBookId(bookId);
             bookRepository.deleteById(bookId);
         } else {

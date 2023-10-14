@@ -11,14 +11,6 @@ public class LibraryRecordDTO {
     public LibraryRecordDTO() {
     }
 
-    public LibraryRecordDTO(Long bookId, LocalDateTime borrowTime, LocalDateTime returnTime) {
-        this.bookId = bookId;
-        this.borrowTime = borrowTime;
-        this.returnTime = returnTime;
-    }
-
-    // Getters and Setters
-
     public Long getBookId() {
         return bookId;
     }

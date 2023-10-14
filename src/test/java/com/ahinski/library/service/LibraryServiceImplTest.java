@@ -38,7 +38,6 @@ class LibraryServiceImplTest {
 
     @Autowired
     private LibraryRecordMapper libraryRecordMapper;
-
     private BookDTO bookDTO;
     private Book book;
     private LibraryRecord libraryRecord;
@@ -46,11 +45,9 @@ class LibraryServiceImplTest {
 
     @BeforeEach
     void setUp() {
-        bookDTO = createMockBookDTO("123456", "Harry Potter",
-                "Fantasy", "A book about the boy who lived", "J.K. Rowling");
+        bookDTO = createMockBookDTO("123456", "Harry Potter", "Fantasy", "A book about the boy who lived", "J.K. Rowling");
 
-        book = createMockBook("123456", "Harry Potter",
-                "Fantasy", "A book about the boy who lived", "J.K. Rowling");
+        book = createMockBook("123456", "Harry Potter", "Fantasy", "A book about the boy who lived", "J.K. Rowling");
 
         libraryRecord = new LibraryRecord();
         libraryRecord.setBook(book);

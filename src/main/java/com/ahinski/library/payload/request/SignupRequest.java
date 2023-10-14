@@ -1,8 +1,8 @@
 package com.ahinski.library.payload.request;
 
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotBlank;
 import java.util.Set;
-
-import javax.validation.constraints.*;
 
 public class SignupRequest {
     @NotBlank

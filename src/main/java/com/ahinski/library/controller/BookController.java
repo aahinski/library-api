@@ -1,7 +1,6 @@
 package com.ahinski.library.controller;
 
 import com.ahinski.library.dto.BookDTO;
-import com.ahinski.library.entity.Role;
 import com.ahinski.library.exception.BookNotFoundException;
 import com.ahinski.library.service.BookService;
 import org.springframework.beans.factory.annotation.Autowired;

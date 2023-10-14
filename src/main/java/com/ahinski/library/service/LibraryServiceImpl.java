@@ -7,7 +7,6 @@ import com.ahinski.library.entity.LibraryRecord;
 import com.ahinski.library.exception.BookNotFoundException;
 import com.ahinski.library.mapper.BookMapper;
 import com.ahinski.library.mapper.LibraryRecordMapper;
-import com.ahinski.library.repository.BookRepository;
 import com.ahinski.library.repository.LibraryRecordRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -23,13 +22,10 @@ public class LibraryServiceImpl implements LibraryService {
     private LibraryRecordRepository libraryRecordRepository;
 
     @Autowired
-    private BookRepository bookRepository;
+    private BookMapper bookMapper;
 
     @Autowired
-    private BookMapper bookMapper; // Assuming you have a BookMapper interface
-
-    @Autowired
-    private LibraryRecordMapper libraryRecordMapper; // Assuming you have a LibraryRecordMapper interface
+    private LibraryRecordMapper libraryRecordMapper;
 
     @Override
     public LibraryRecordDTO addRecord(BookDTO bookDTO) {

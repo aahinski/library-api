@@ -17,11 +17,7 @@ public class LibraryRecord {
     private LocalDateTime borrowTime;
     private LocalDateTime returnTime;
 
-    // Constructors, getters, and setters
-
-    // Constructors
     public LibraryRecord() {
-        // Default constructor
     }
 
     public LibraryRecord(Book book, LocalDateTime borrowTime, LocalDateTime returnTime) {

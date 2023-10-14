@@ -55,7 +55,5 @@ public class BookDTO {
     public void setGenre(String genre) {
         this.genre = genre;
     }
-
-    // getters and setters
 }
 

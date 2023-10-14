@@ -16,11 +16,7 @@ public class Book {
     private String description;
     private String author;
 
-    // Constructors, getters, and setters
-
-    // Constructors
     public Book() {
-        // Default constructor
     }
 
     public Book(String isbn, String title, String genre, String description, String author) {
@@ -30,8 +26,6 @@ public class Book {
         this.description = description;
         this.author = author;
     }
-
-    // Getters and Setters
 
     public Long getId() {
         return id;
